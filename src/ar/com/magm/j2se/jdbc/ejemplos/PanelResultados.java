@@ -8,6 +8,9 @@ import ar.com.magm.j2se.jdbc.*;
 import java.awt.BorderLayout;
 import javax.swing.JPopupMenu;
 import javax.swing.JMenuItem;
+import javax.swing.border.TitledBorder;
+import javax.swing.border.EtchedBorder;
+import java.awt.Color;
 
 public class PanelResultados extends JPanel {
 
@@ -36,7 +39,7 @@ public class PanelResultados extends JPanel {
 	private void initialize() {
 		this.setLayout(new BorderLayout());
 		this.setSize(300, 200);
-		this.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED), "Salida", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.TOP, null, null));
+		this.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.RAISED, null, null), "Salidas", TitledBorder.LEFT, TitledBorder.TOP, null, new Color(51, 51, 51)));
 		this.add(getJScrollPane(), java.awt.BorderLayout.NORTH);
 		this.add(getJScrollPane1(), java.awt.BorderLayout.CENTER);
 	}
