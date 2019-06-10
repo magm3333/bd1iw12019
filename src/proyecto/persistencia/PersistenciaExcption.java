@@ -2,6 +2,9 @@ package proyecto.persistencia;
 
 public class PersistenciaExcption extends Exception {
 
+
+	private static final long serialVersionUID = 1L;
+
 	public PersistenciaExcption() {
 	
 	}

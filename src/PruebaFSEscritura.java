@@ -10,9 +10,9 @@ public class PruebaFSEscritura {
 
 	public static void main(String[] args) {
 		IPersonaNegocio pDAO = new PersonaNegocio();
-
+		Scanner s=new Scanner(System.in);
 		try {
-			Scanner s=new Scanner(System.in);
+			
 			boolean bandera=true;
 			while (bandera) {
 				System.out.print("Ingrese DNI (-1 para salir): ");
@@ -35,6 +35,8 @@ public class PruebaFSEscritura {
 		} catch (NegocioExcption e) {
 
 			e.printStackTrace();
+		} finally {
+			s.close();
 		}
 
 	}

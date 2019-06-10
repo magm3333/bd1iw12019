@@ -2,6 +2,9 @@ package proyecto.negocio;
 
 public class NegocioExcption extends Exception {
 
+
+	private static final long serialVersionUID = 1L;
+
 	public NegocioExcption() {
 		
 	}

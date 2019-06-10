@@ -1,1 +1,0 @@
-java -classpath "/home/mariano/Descargas/mysql-connector-java-5.1.47-bin.jar:." JDBC4 "$1"
